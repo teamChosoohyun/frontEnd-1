@@ -23,7 +23,7 @@ export default function Lecturer(){
                 <img src={"/images/lecturer5.png"} alt={"icon"} className={styles.lecImg} />
                 <p className={styles.lecField}>소프트웨어</p>
             </div>
-            <p className={styles.info}>자세히 보기 ></p>
+            <p className={styles.info}>자세히 보기</p>
         </div>
     )
 }
