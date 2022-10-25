@@ -1,14 +1,14 @@
 .header{
+    background-color: white;
     display: flex;
     align-items: center;
-    background: none;
-    height: 60px;
+    height: 50px;
     color: white;
     z-index: 2;
-    position: absolute;
-    top: 10px;
+    top: 0;
     width: 100%;
     font-weight: bold;
+    position: fixed;
 }
 
 .nav{
@@ -17,6 +17,7 @@
     justify-content: center;
     width: 100%;
 }
+
 .nav > span{
     margin-right: 60px;
 }
@@ -30,8 +31,11 @@
     margin-right: 60px;
 }
 
+.text{
+    color: black;
+}
+
 .headerImg{
+    width: 120px;
     margin-left: 20px;
-    width: 80px;
-    height: 80px;
 }
