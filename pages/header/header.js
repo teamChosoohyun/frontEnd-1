@@ -7,7 +7,7 @@ export default function Header() {
         <div className={styles.header}>
             <img src="/images/logo2.png" alt={"icon"} className={styles.headerImg}></img>
             <div className={classNames(styles.nav, styles.text)}>
-                <Link href="/"><span>코딩맘 소개</span></Link>
+                <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>
                 <Link href="lecturer/lecturerList"><span>강사 소개</span></Link>
                 <Link href="/"><span>컨텐츠 소개</span></Link>
                 <Link href="/"><span>교구 소개</span></Link>
