@@ -1,0 +1,38 @@
+
+.menu {
+    text-align : center;
+    align-items: center;
+    margin-top : 51px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.check {
+    width : 106px;
+    height : 64px;
+    border-radius: 30px;
+    background-color: #FFA41D;
+    text-align: center;
+    padding:20px;
+    display: inline-block;
+}
+
+.image {
+    width : 820px;
+    height : 370px;
+    align-items: center;
+    display : inline-block;
+}
+
+.about {
+    text-align : center;
+}
+
+.what {
+    font-size : 40px;
+    text-decoration : underline;
+    display : inline-block;
+    margin-left : 200px;
+    margin-bottom : 40px;
+}
