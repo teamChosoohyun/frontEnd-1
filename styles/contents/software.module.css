@@ -1,0 +1,52 @@
+.lego {
+
+}
+
+.menu {
+    text-align : center;
+    align-items: center;
+    margin-top : 51px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.check {
+    width : 140px;
+    height : 64px;
+    border-radius: 30px;
+    background-color: #FFA41D;
+    display: inline-block;
+    text-align: center;
+    padding : 20px;
+}
+
+.about {
+    text-align : center;
+}
+
+.what {
+    font-size : 40px;
+    text-decoration : underline;
+    display : inline-block;
+    margin-left : 200px;
+    margin-bottom : 40px;
+}
+
+.title {
+    text-decoration : underline;
+    text-align : center;
+    font-weight: bold;
+    font-size : 40px;
+}
+
+.lego_img {
+    text-align : center;
+    margin-top: 51px;
+}
+
+.explain {
+    text-align : center;
+    font-size: 25px;
+    margin-top: 65px;
+}

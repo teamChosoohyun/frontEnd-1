@@ -1,0 +1,40 @@
+.contents {
+
+}
+
+.title {
+    align-items: center;
+    text-align: center;
+}
+
+.title > h2 {
+    size : 60px;
+}
+
+.blue {
+    background-color: #4065C5;
+    width : 143px;
+    height : 100%;
+    position: fixed;
+    float : left;
+    display: inline-block;
+}
+
+
+.blue_left {
+    background-color: #4065C5;
+    height : 100%;
+    width : 143px;
+    position : fixed;
+}
+
+.blue_right {
+    background-color: #4065C5;
+    height : 100%;
+    width : 143px;
+}
+
+.float {
+    float : right;
+    display: inline-block;
+}
