@@ -16,7 +16,7 @@ export default function colored_header()
             </div>
             <div className={styles.auth}>
                 <Link href="/"><span>로그인</span></Link>
-                <Link href="/"><span>회원가입</span></Link>
+                <Link href="/login/loginpage"><span>회원가입</span></Link>
             </div>
         </div>
     )
