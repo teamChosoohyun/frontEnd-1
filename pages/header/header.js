@@ -14,7 +14,7 @@ export default function Header() {
                 <Link href="/"><span>교구 소개</span></Link>
             </div>
             <div className={classNames(styles.auth, styles.text)}>
-                <Link href="/login/loginpage"><span>로그인</span></Link>
+                <Link href="/"><span>로그인</span></Link>
                 <Link href="/login/loginpage"><span>회원가입</span></Link>
             </div>
         </div>
