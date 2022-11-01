@@ -33,8 +33,8 @@
 
 .kakao {
     cursor: pointer;
-    position: fixed;
-    margin-top: 30%;
+    position: absolute;
+    margin-top: 70vh;
     margin-left: 10%;
     width: 40%;
     height: 10%;
@@ -46,16 +46,15 @@
 .kakaoicon {
     position: absolute;
     margin-left: -47%;
-    margin-top: -5.1%;
-    width: 10%;
+    margin-top: -4vh;
     height: 80%;
 }
 .start {
     position: absolute;
     width: 100%;
     height: 10%;
-    margin-top: -4%;
+    margin-top: -3vh;
     margin-left:-50%;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 20px;
 }
