@@ -1,12 +1,12 @@
 .content {
     width: 100%;
-    height: 500vh;
+    height: 440vh;
     background-color: #4065C5;
 }
 .container {
     position: relative;
     width: 80%;
-    height: 490vh;
+    height: 440vh;
     background-color: white;
     margin: 0 auto;
 }
@@ -44,14 +44,14 @@
     margin-top: 15vh;
 }
 .barImg {
-    width: 4%;
-    height: 20%;
+    width: 4.2%;
+    height: 22%;
     margin-left: 48%;
-    margin-top: 10vh;
+    margin-top: 9vh;
 }
 .divyear1 {
     margin-right: 53%;
-    margin-top: -58.2%;
+    margin-top: -57.5%;
 }
 .year1, .year3, .year5 {
     font-size: 30px;
@@ -63,7 +63,6 @@
 }
 .divyear2 {
     margin-left: 53%;
-    margin-top:1%;
 }
 .year2, .year4 {
     font-size: 30px;
@@ -76,7 +75,7 @@
 }
 .divyear4{
     margin-left: 53%;
-    margin-top:1%;
+    margin-top:1.5%;
 }
 .divyear5{
     margin-right: 53%;
