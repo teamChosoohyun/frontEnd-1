@@ -20,6 +20,7 @@
 }
 .nav > span{
     margin-right: 60px;
+    cursor: pointer;
 }
 
 .auth{
@@ -29,6 +30,7 @@
 
 .auth > span{
     margin-right: 60px;
+    cursor: pointer;
 }
 
 .headerImg{
