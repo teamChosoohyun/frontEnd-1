@@ -1,6 +1,7 @@
 import {Footer, Header, LecturerInfo} from "../allFiles";
 import styles from "../../styles/lecturer/lecturerList.module.css";
 import styled from 'styled-components';
+import {useRouter} from "next/router";
 
 const Grid = styled.div`
   display: grid;
@@ -15,16 +16,16 @@ export default function LecturerList() {
             <Header/>
             <div className={styles.lecturerList}>
                 <div className={styles.category}>
-                    <div className={styles.categoryButton}>
+                    <div className={styles.categoryButton} >
                         <span>소프트웨어 강사</span>
                     </div>
-                    <div className={styles.categoryButton}>
+                    <div className={styles.categoryButton} >
                         <span>레고 강사</span>
                     </div>
-                    <div className={styles.categoryButton}>
+                    <div className={styles.categoryButton} >
                         <span>메이커 강사</span>
                     </div>
-                    <div className={styles.categoryButton}>
+                    <div className={styles.categoryButton} >
                         <span>기타</span>
                     </div>
                 </div>

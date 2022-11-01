@@ -9,38 +9,33 @@
     width: 100%;
     font-weight: bold;
     position: fixed;
+    animation: growUp 1s;
 }
 
-.down{
-    animation: growDown 300ms ease-in-out forwards;
-    transform-origin: top center;
-}
-
-.up{
-
-}
-
-@keyframes growUp {
-    0% {
-        transform: scaleY(0)
-    }
-    80% {
-        transform: scaleY(1.1)
-    }
-    100% {
-        transform: scaleY(1)
-    }
+.invisible{
+    animation: growDown 1s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes growDown {
     0% {
-        transform: scaleY(0)
+        opacity: 1;
+        transform: translateZ(0);
     }
-    80% {
-        transform: scaleY(1.1)
+    to {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
     }
-    100% {
-        transform: scaleY(1)
+}
+
+@keyframes growUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
     }
 }
 
@@ -52,6 +47,7 @@
 }
 .nav > span{
     margin-right: 60px;
+    cursor: pointer;
 }
 
 .auth{
@@ -61,6 +57,7 @@
 
 .auth > span{
     margin-right: 60px;
+    cursor: pointer;
 }
 
 .headerImg{

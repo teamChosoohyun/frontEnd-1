@@ -35,6 +35,7 @@
 .legoDiv, .softwareDiv, .othersDiv{
     position: absolute;
     margin: 10px 0 0 30px;
+    z-index: 2;
 }
 
 .legoFirst, .softwareFirst, .othersFirst{
