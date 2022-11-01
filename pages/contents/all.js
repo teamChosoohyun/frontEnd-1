@@ -5,12 +5,14 @@ import Maker_pic from "./img/maker.png";
 import Software_pic from "./img/software.png";
 import Contents from "./contents";
 import Link from "next/link";
+import Footer from "../footer/footer";
 
 export default function all() {
     return (
-        <>
+        <div className={styles.all}>
             <Contents />
-            <div className={styles.all}>
+            <div className={styles.main}>
+                <div style={{height:51}} />
                 <div className={styles.menu}>
                     <div className={styles.check}>
                         <text>전체</text>
@@ -44,10 +46,12 @@ export default function all() {
                         <br />
                         <text>메이커 교육에 대한 내용(추후 수정)</text>
                     </div>
-
+                </div>
+                <div style={{textAlign:"center"}}>
+                    <Footer/>
                 </div>
             </div>
-        </>
+        </div>
 
     )
 }
