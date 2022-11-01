@@ -3,7 +3,6 @@ import styles from '../../styles/header/mainHeader.module.css'
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import {useRef, useState} from "react";
 import Image from "next/image";
-
 export default function MainHeader()
 {
     const [header, setHeader] = useState(true);
@@ -18,7 +17,7 @@ export default function MainHeader()
             headerRef.current.classList.remove(styles.invisible)
         }
     }, [header])
-
+    
     return(
         <div className={styles.header} ref={headerRef}>
             <span className={styles.headerImg}>
@@ -32,7 +31,7 @@ export default function MainHeader()
             </div>
             <div className={styles.auth}>
                 <Link href="/"><span>로그인</span></Link>
-                <Link href="/"><span>회원가입</span></Link>
+                <Link href="/login/loginpage"><span>회원가입</span></Link>
             </div>
         </div>
     )

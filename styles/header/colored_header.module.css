@@ -5,9 +5,10 @@
     height: 60px;
     color: black;
     z-index: 2;
-    top: 10px;
     width: 100%;
     font-weight: bold;
+    position : fixed;
+    top:0px;
 }
 
 .nav{
@@ -15,6 +16,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: white;
 }
 .nav > span{
     margin-right: 60px;
