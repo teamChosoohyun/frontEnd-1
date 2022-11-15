@@ -1,11 +1,13 @@
 import Link from "next/link";
 import styles from "../../styles/header/header.module.css";
 import classNames from "classnames";
+import Image from "next/image";
+
 export default function Header() {
     return (
         <div className={styles.header}>
             <Link href="/">
-                <img src="/images/logo2.png" alt={"icon"} className={styles.headerImg}></img>
+                <Image src="/images/logo2.png" alt={"icon"} width={120} height={40}></Image>
             </Link>
             <div className={classNames(styles.nav, styles.text)}>
                 <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>
