@@ -3,6 +3,7 @@ import styles from '../../styles/header/mainHeader.module.css'
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import {useRef, useState} from "react";
 import Image from "next/image";
+
 export default function MainHeader()
 {
     const [header, setHeader] = useState(true);
