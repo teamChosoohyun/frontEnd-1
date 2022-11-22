@@ -9,7 +9,7 @@ export default function loginpage() {
                 </Link>
                 <img src={"/images/logback.png"} alt={"icons"} className={styles.logback} />
             </div>
-            <Link href="/">
+            <Link href="/login/login2">
                 <button className={styles.kakao}>
                     <img src={"/images/kakao.png"} alt={"icons"} className={styles.kakaoicon} />
                     <text className={styles.start}>카카오로 시작하기</text>
