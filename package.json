@@ -11,12 +11,15 @@
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",
     "classnames": "^2.3.2",
+    "jqeury": "^0.0.1-security",
+    "jquery": "^3.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-calendar": "^4.0.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
     "react-modal": "^3.16.1",
+    "recoil": "^0.7.6",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

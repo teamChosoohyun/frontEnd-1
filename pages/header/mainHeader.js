@@ -8,15 +8,24 @@ export default function MainHeader()
 {
     const [header, setHeader] = useState(true);
     const headerRef = useRef();
+    let lastPos = 0;
 
-    useScrollPosition(({currPos})=>{
+    useScrollPosition(({ currPos })=>{
         const scrollY = Math.abs(currPos.y);
-        if(scrollY >= 50){
+        console.log(scrollY)
+        if(scrollY < 1000){
+            headerRef.current.classList.remove(styles.whiteBack)
+        }
+        if(scrollY > lastPos){
             headerRef.current.classList.add(styles.invisible);
         }
-        else if(scrollY === 0) {
+        else if(scrollY === 0 || scrollY < lastPos) {
             headerRef.current.classList.remove(styles.invisible)
+            if(scrollY > 1000){
+                headerRef.current.classList.add(styles.whiteBack)
+            }
         }
+        lastPos = scrollY;
     }, [header])
     
     return(
