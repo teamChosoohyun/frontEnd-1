@@ -9,6 +9,7 @@ import Contents from "./contents/contents";
 import Lego from "./contents/lego";
 import Colored_header from "./header/colored_header";
 import Detail from './lecturer/detail';
+import DetailModal from "./lecturer/detailModal";
 
 
-export { MainHeader, Content, Intro, Lecturer, Footer, Header, LecturerInfo, Contents, Lego, Colored_header, Detail}
+export { MainHeader, Content, Intro, Lecturer, Footer, Header, LecturerInfo, Contents, Lego, Colored_header, Detail, DetailModal}
