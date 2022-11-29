@@ -1,4 +1,6 @@
-import {Footer, Header, LecturerInfo} from "../allFiles";
+import Header from '../header/header'
+import Footer from '../footer/footer'
+import LecturerInfo from './lecturerInfo'
 import styles from "../../styles/lecturer/lecturerList.module.css";
 import styled from 'styled-components';
 import {useRouter} from "next/router";

@@ -1,5 +1,5 @@
 import styles from "../../styles/contents/contents.module.css";
-import {Header} from "../allFiles";
+import Header from '../header/header'
 
 export default function contents() {
     return (
