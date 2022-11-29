@@ -2,7 +2,9 @@ import Image from "next/image";
 import React, { useState } from "react"
 import Calendar from "react-calendar"
 import 'react-calendar/dist/Calendar.css';
-import { Header, Footer, DetailModal } from "../allFiles";
+import Header from '../header/header'
+import Footer from '../footer/footer'
+import DetailModal from './detailModal'
 import styles from "../../styles/lecturer/detail.module.css"
 import styled from "styled-components"; 
 import classNames from "classnames";

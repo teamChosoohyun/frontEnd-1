@@ -1,4 +1,9 @@
-import {MainHeader, Content, Intro, Lecturer, Footer} from "./allFiles";
+import MainHeader from './header/mainHeader'
+import Content from './main/content'
+import Intro from './main/intro'
+import Lecturer from './main/lecturer'
+import Footer from "./footer/footer"
+
 import styles from '../styles/index.module.css';
 import Image from "next/image";
 

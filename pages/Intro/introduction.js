@@ -1,5 +1,7 @@
 import styles from '../../styles/Intro/introduction.module.css';
-import { Header, Footer } from '../allFiles'
+import Header from '../header/header'
+import Footer from '../footer/footer'
+
 export default function Introduction(){
     return(
         <div className={styles.content}>

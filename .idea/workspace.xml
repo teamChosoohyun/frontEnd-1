@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb84e89-5868-40ba-827d-a8e1181748c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Intro/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Intro/introduction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/allFiles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/contents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/lecturer/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lecturer/lecturerList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/lecturerList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/login2.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/loginpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/loginpage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SW2127/Desktop/all/make_me/TcpProject",
+    "last_opened_file_path": "C:/Users/SW2127/Desktop/all/make_me/teamChosoohyun/front",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -87,6 +95,7 @@
       <workItem from="1667343875216" duration="734000" />
       <workItem from="1667370311121" duration="24000" />
       <workItem from="1668594074221" duration="24000" />
+      <workItem from="1669685500019" duration="308000" />
     </task>
     <servers />
   </component>

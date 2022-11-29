@@ -1,6 +1,7 @@
 import styles from "../../styles/login/login.module.css";
 import Link from "next/link";
-export default function loginpage() {
+
+export default function Loginpage() {
     return (
         <div className={styles.loginmain}>
             <div className={styles.logins}>

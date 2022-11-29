@@ -4,7 +4,8 @@ import { useRouter } from "next/router";
 import $ from 'jquery';
 import React, { useState, useRef, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-export default function loginpage2() {
+
+export default function Login2() {
     const [users, setUsers] = useState("");
     function handlelecture() {
         setUsers("lec");
