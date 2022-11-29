@@ -12,14 +12,14 @@ export default function all() {
         <div className={styles.all}>
             <Contents />
             <div className={styles.main}>
-                <div style={{height:51}} />
+                <div/>
                 <div className={styles.menu}>
                     <div className={styles.check}>
                         <text>전체</text>
                     </div>
-                    <Link href="/contents/lego"><text style={{marginLeft:83}}>레고교육</text></Link>
-                    <Link href="/contents/software"><text style={{marginLeft:83}}>소프트웨어교육</text></Link>
-                    <Link href="/contents/others"><text style={{marginLeft:83}}>기타교육들</text></Link>
+                    <Link href="/contents/lego"><text className={styles.allText}>레고교육</text></Link>
+                    <Link href="/contents/software"><text className={styles.allText}>소프트웨어교육</text></Link>
+                    <Link href="/contents/others"><text className={styles.allText}>기타교육들</text></Link>
                 </div>
                 <div>
                     <h2 className={styles.what}>레고교육</h2>
@@ -47,7 +47,7 @@ export default function all() {
                         <text>메이커 교육에 대한 내용(추후 수정)</text>
                     </div>
                 </div>
-                <div style={{textAlign:"center"}}>
+                <div className={styles.center}>
                     <Footer/>
                 </div>
             </div>

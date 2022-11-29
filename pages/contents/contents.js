@@ -6,10 +6,10 @@ export default function contents() {
         <div className={styles.contents}>
             <Header />
             <div className={styles.title}>
-                <h2 style={{fontSize : 60, marginTop : 60}}>콘텐츠 소개</h2>
-                <text style={{fontSize : 30, color:"#3F80FF", fontWeight : 1, marginTop  : 10}}>"더 나은 미래를, 보다 많은 학생에게"</text>
+                <h2 className={styles.intro}>콘텐츠 소개</h2>
+                <text className={styles.content}>"더 나은 미래를, 보다 많은 학생에게"</text>
                 <br/>
-                <text style={{fontSize : 30, fontWeight : 1}}>모든 아이들이 누릴 수 있는 소프트웨어 교육</text>
+                <text className={styles.content2}>모든 아이들이 누릴 수 있는 소프트웨어 교육</text>
             </div>
         </div>
     )

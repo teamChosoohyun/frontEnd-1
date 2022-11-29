@@ -11,6 +11,13 @@
     cursor: pointer;
 }
 
+.left{
+    margin-left: 83px;
+}
+
+.center{
+    text-align: center;
+}
 
 .check {
     width : 140px;
@@ -39,6 +46,7 @@
     text-align : center;
     font-weight: bold;
     font-size : 40px;
+    margin-top: 115px;
 }
 
 .lego_img {
