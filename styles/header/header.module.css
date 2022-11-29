@@ -8,9 +8,12 @@
     z-index: 1;
     width: 100%;
     font-weight: bold;
+    font-size: 18px;
     position: fixed;
 }
-
+.linke {
+    cursor: pointer;
+}
 .nav{
     display: flex;
     align-items: center;

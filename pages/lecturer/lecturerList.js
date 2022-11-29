@@ -3,7 +3,8 @@ import Footer from '../footer/footer'
 import LecturerInfo from './lecturerInfo'
 import styles from "../../styles/lecturer/lecturerList.module.css";
 import styled from 'styled-components';
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
+import Fade from 'react-reveal/Fade'
 
 const Grid = styled.div`
   display: grid;
@@ -15,7 +16,7 @@ const Grid = styled.div`
 export default function LecturerList() {
     return (
         <div className={styles.lecturer}>
-            <Header/>
+            <Header />
             <div className={styles.lecturerList}>
                 <div className={styles.category}>
                     <div className={styles.categoryButton} >
@@ -33,15 +34,17 @@ export default function LecturerList() {
                 </div>
                 <div className={styles.flex}>
                     <Grid>
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
-                        <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                        <Fade bottom>
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                            <LecturerInfo img={"/images/lecturer.png"} name={"박춘배"} category={"소프트웨어 분야"} email={"email@gmail.com"} />
+                        </Fade>
                     </Grid>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         </div>
     )

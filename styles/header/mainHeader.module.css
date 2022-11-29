@@ -2,11 +2,12 @@
     display: flex;
     align-items: center;
     background: none;
-    height: 80px;
+    height: 60px;
     color: white;
     z-index: 3;
     width: 100%;
     font-weight: bold;
+    font-size: 18px;
     position: fixed;
     animation: growUp 1s;
     transition: all ease 1s;
