@@ -13,7 +13,8 @@ export default function MainHeader()
     useScrollPosition(({ currPos })=>{
         const scrollY = Math.abs(currPos.y);
         console.log(scrollY)
-        if(scrollY < 1000){
+        console.log(scrollY)
+        if(scrollY < 870){
             headerRef.current.classList.remove(styles.whiteBack)
         }
         if(scrollY > lastPos){
@@ -21,7 +22,7 @@ export default function MainHeader()
         }
         else if(scrollY === 0 || scrollY < lastPos) {
             headerRef.current.classList.remove(styles.invisible)
-            if(scrollY > 1000){
+            if(scrollY > 870){
                 headerRef.current.classList.add(styles.whiteBack)
             }
         }
@@ -40,7 +41,7 @@ export default function MainHeader()
                 <Link href="/"><span>교구 소개</span></Link>
             </div>
             <div className={styles.auth}>
-                <Link href="/"><span>로그인</span></Link>
+                <Link href="/login/loginPage"><span>로그인</span></Link>
                 <Link href="/login/loginpage"><span>회원가입</span></Link>
             </div>
         </div>

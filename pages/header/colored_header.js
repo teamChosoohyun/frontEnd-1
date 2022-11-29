@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function colored_header()
 {
     return(
-        <div className={styles.header} style={{backgroundColor:"white"}}>
+        <div className={styles.header}>
             <Image src={logo}></Image>
             <div className={styles.nav}>
                 <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>

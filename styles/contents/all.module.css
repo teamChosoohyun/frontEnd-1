@@ -11,6 +11,17 @@
     cursor: pointer;
 }
 
+.main > div div:nth-child(1){
+    height: 51
+}
+
+.allText{
+    margin-left: 83px;
+}
+
+.center{
+    text-align: center;
+}
 
 .check {
     width : 106px;

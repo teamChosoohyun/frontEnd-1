@@ -10,24 +10,24 @@ export default function lego() {
         <div className={styles.lego}>
             <Contents />
             <div className={styles.main}>
-                <div style={{height:51}} />
+                <div className={styles.afterMain} />
                 <div className={styles.menu}>
                     <Link href="/contents/all"><text>전체</text></Link>
-                    <div className={styles.check} style={{marginLeft:83}}>
+                    <div className={`${styles.check} ${styles.left}`}>
                         <Link href="/contents/lego"><text>레고교육</text></Link>
                     </div>
-                    <Link href="/contents/software"><text style={{marginLeft:83}}>소프트웨어교육</text></Link>
-                    <Link href="/contents/others"><text style={{marginLeft:83}}>기타교육들</text></Link>
+                    <Link href="/contents/software"><text className={styles.left}>소프트웨어교육</text></Link>
+                    <Link href="/contents/others"><text className={styles.left}>기타교육들</text></Link>
                 </div>
-                <div className={styles.title} style={{marginTop:115}}>
+                <div className={`${styles.title} ${styles.top1}`}>
                     <text>레고 교육</text>
                 </div>
                 <div className={styles.lego_img}><Image src={Lego_pic}/></div>
-                <div className={styles.title} style={{marginTop:69}}>
+                <div className={`${styles.title} ${styles.top2}`}>
                     <text>레고 교육이란?</text>
                 </div>
                 <div className={styles.explain}><text>레고 교육이란 레고 교육 (추후 수정 예정)</text></div>
-                <div style={{textAlign:"center"}}>
+                <div className={styles.center}>
                     <Footer/>
                 </div>
             </div>
