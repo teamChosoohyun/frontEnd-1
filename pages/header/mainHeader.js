@@ -37,7 +37,7 @@ export default function MainHeader()
             <div className={styles.nav}>
                 <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>
                 <Link href="/lecturer/lecturerList"><span>강사 소개</span></Link>
-                <Link href="/contents/all"><span>컨텐츠 소개</span></Link>
+                <Link href="/contents/contentIndex"><span>콘텐츠 소개</span></Link>
                 <Link href="/"><span>교구 소개</span></Link>
             </div>
             <div className={styles.auth}>

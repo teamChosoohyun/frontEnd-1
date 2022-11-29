@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb84e89-5868-40ba-827d-a8e1181748c9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/contents/contentIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/contents/contentIndex.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Intro/introduction.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Intro/introduction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/allFiles.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/contents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/lecturer/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/lecturer/lecturerList.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/lecturerList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/login2.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login/loginpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/loginpage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/contents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/lego.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/lego.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/others.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/others.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/software.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/software.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header/mainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header/mainHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contents/all.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/all.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contents/contents.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/contents.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contents/others.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/others.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -95,7 +99,7 @@
       <workItem from="1667343875216" duration="734000" />
       <workItem from="1667370311121" duration="24000" />
       <workItem from="1668594074221" duration="24000" />
-      <workItem from="1669685500019" duration="308000" />
+      <workItem from="1669685500019" duration="5467000" />
     </task>
     <servers />
   </component>
