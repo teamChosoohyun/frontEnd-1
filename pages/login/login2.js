@@ -36,11 +36,7 @@ export default function Login2() {
         <div className={styles.loginmain}>
             <div className={styles.logins}>
                 <div className={styles.filebox}>
-                    <label for="files">
-                        <img src={imageSrc} onChange={handleChangeFile} />
-                    </label>
-                    <input type="file" id="files" onChange={handleChangeFile} />
-                    <p className="min" ><b>프로필 이미지를 업로드 해주세요</b></p>
+                    <img src={"/images/logong.png"} alt={"icons"} className={styles.logong} />
                 </div>
                 <div className={styles.line}></div>
                 <input type="text" placeholder="이름을 입력해 주세요" className={styles.name} />

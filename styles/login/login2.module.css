@@ -25,24 +25,13 @@
 }
 .filebox {
     position: fixed;
+    width: 10px;
+    margin-left: 7%;
+    margin-top: 13%;
+}
+.filebox > img {
     width: 300px;
-    margin-left: 13%;
-    margin-top: 5%;
-}
-.filebox > label > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-}
-.filebox > input {
-    display: none;
-}
-.filebox > p {
-    position: absolute;
-    margin-left: -15%;
-    margin-top: 5%;
-    color: gray;
-    font-size: 20px;
+    height: 100%;
 }
 .line {
     position: fixed;
@@ -57,7 +46,7 @@
     margin-left: 50%;
     top: 160px;
     border: 0;
-    width: 550px;
+    width: 36%;
     height: 35px;
     border-radius: 2px;
     background-color: #D9D9D9;
@@ -85,7 +74,7 @@
     margin-left: 50%;
     top: 260px;
     border: 0;
-    width: 550px;
+    width: 36%;
     height: 50px;
     border-radius: 2px;
     background-color: #D9D9D9;
@@ -104,7 +93,7 @@
     margin-left: 50%;
     top: 370px;
     border: 0;
-    width: 550px;
+    width: 36%;
     height: 50px;
     border-radius: 2px;
     background-color: #D9D9D9;
@@ -130,7 +119,7 @@
     margin-left: 50%;
     top: 500px;
     border: 0;
-    width: 550px;
+    width: 36%;
     height: 50px;
     border-radius: 2px;
     background-color: white;
@@ -145,4 +134,8 @@
     background-color: #D9D9D9;
     text-align: center;
     font-size: 17px;
+    
+}
+.gosign > text {
+    cursor: pointer;
 }
