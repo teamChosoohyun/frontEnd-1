@@ -7,7 +7,7 @@ import Lego from "./lego";
 import Software from "./software";
 import Others from "./others";
 import Fade from 'react-reveal/Fade'
-export default function ContentIndex(){
+export default function Index(){
     const [education, setEducation] = useState(1);
 
     return(
