@@ -2,7 +2,7 @@ import styles from '../../styles/Intro/introduction.module.css';
 import Header from '../header/header'
 import Footer from '../footer/footer'
 import Fade from 'react-reveal/Fade'
-export default function Introduction(){
+export default function Index(){
     return(
         <div className={styles.content}>
             <Header/>

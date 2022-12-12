@@ -20,6 +20,8 @@ export default function Detail() {
     })
     const [modal, setModal] = useState(false);
 
+    const auth = "강사";
+
     const getNowTime = () => {
         let now = new Date().getHours().toString().padStart(2, "0") + ":" + new Date().getMinutes().toString().padStart(2, "0");
         const cal = new Date().getHours() + new Date().getMinutes();
@@ -85,16 +87,19 @@ export default function Detail() {
                     <span className={classNames(styles.img)}>
                         <Image src="/images/lecturer.png" alt="" width={800} height={500} className={styles.img} layout={"fixed"} />
                     </span>
-                    <div className={styles.flex}>
-                        <Work active={active.attendance} onClick={()=> workTimeFunc(1)}>
-                            <Text active={active.attendance}>출근</Text>
-                            <Text2>{active.attTime}</Text2>
-                        </Work>
-                        <Work active={active.leaveWork} onClick={()=> workTimeFunc(2)}>
-                            <Text active={active.leaveWork}>퇴근</Text>
-                            <Text2>{active.leaTime}</Text2>
-                        </Work>
-                    </div>
+                    {auth !== "일반" ?
+                        <div className={styles.flex}>
+                            <Work active={active.attendance} onClick={()=> workTimeFunc(1)}>
+                                <Text active={active.attendance}>출근</Text>
+                                <Text2>{active.attTime}</Text2>
+                            </Work>
+                            <Work active={active.leaveWork} onClick={()=> workTimeFunc(2)}>
+                                <Text active={active.leaveWork}>퇴근</Text>
+                                <Text2>{active.leaTime}</Text2>
+                            </Work>
+                        </div>
+                    :
+                        <></>}
                 </div>
                 <div className={styles.info}>
                     <p className={styles.bold}>박춘배</p>
@@ -103,10 +108,11 @@ export default function Detail() {
                 </div>
                 <CalendarContainer>
                     <Calendar 
-                    onChange={(value, event)=>{
-                        console.log(value, event)
+                    onChange={(value)=>{
                         setValue(value);
-                        setModal(true);
+                        if(auth !== "일반"){
+                            setModal(true);
+                        }
                     }} 
                     value={value}></Calendar>
                 </CalendarContainer>
@@ -124,7 +130,7 @@ const CalendarContainer = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 800px;
+        width: 900px;
         height: 500px;
         border: none;
         margin: 50px 0 100px 0;
@@ -144,6 +150,7 @@ const CalendarContainer = styled.div`
     }
     .react-calendar__tile{
         height: 60px;
+        width: 80px;
         margin-top: 20px;
         abbr{
             font-size: 20px;
@@ -153,6 +160,11 @@ const CalendarContainer = styled.div`
     .react-calendar__month-view__weekdays,
     .react-calendar__navigation{
         width: 700px;
+    }
+    .react-calendar__month-view__days{
+      display: grid !important;
+      margin-left: 10px;
+      grid-template-columns: repeat(7, 1fr);
     }
     .react-calendar__month-view__weekdays__weekday{
         abbr{
@@ -189,7 +201,7 @@ const Work = styled.div`
 `
 
 const Text = styled.span`
-    font-family: 'Inter';
+    font-family: 'Inter',sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;

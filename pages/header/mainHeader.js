@@ -35,9 +35,9 @@ export default function MainHeader()
                 <Image src="/images/image5.png" alt={"icon"} width={80} height={80} ></Image>
             </span>
             <div className={styles.nav}>
-                <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>
-                <Link href="/lecturer/lecturerList"><span>강사 소개</span></Link>
-                <Link href="/contents/contentIndex"><span>콘텐츠 소개</span></Link>
+                <Link href="/intro"><span>코딩맘 소개</span></Link>
+                <Link href="/lecturer"><span>강사 소개</span></Link>
+                <Link href="/contents"><span>콘텐츠 소개</span></Link>
                 <Link href="/"><span>교구 소개</span></Link>
             </div>
             <div className={styles.auth}>

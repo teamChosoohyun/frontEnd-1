@@ -10,9 +10,9 @@ export default function Header() {
                 <Image src="/images/logo2.png" alt={"icon"} width={120} height={40} className={styles.linke}></Image>
             </Link>
             <div className={classNames(styles.nav, styles.text)}>
-                <Link href="/Intro/introduction"><span>코딩맘 소개</span></Link>
-                <Link href="/lecturer/lecturerList"><span>강사 소개</span></Link>
-                <Link href="/contents/contentIndex"><span>콘텐츠 소개</span></Link>
+                <Link href="/intro"><span>코딩맘 소개</span></Link>
+                <Link href="/lecturer"><span>강사 소개</span></Link>
+                <Link href="/contents"><span>콘텐츠 소개</span></Link>
                 <Link href="/"><span>교구 소개</span></Link>
             </div>
             <div className={classNames(styles.auth, styles.text)}>

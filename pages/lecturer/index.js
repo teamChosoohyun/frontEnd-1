@@ -3,7 +3,6 @@ import Footer from '../footer/footer'
 import LecturerInfo from './lecturerInfo'
 import styles from "../../styles/lecturer/lecturerList.module.css";
 import styled from 'styled-components';
-import { useRouter } from "next/router";
 import Fade from 'react-reveal/Fade'
 
 const Grid = styled.div`
@@ -13,7 +12,7 @@ const Grid = styled.div`
   row-gap: 2em;
 `
 
-export default function LecturerList() {
+export default function Index() {
     return (
         <div className={styles.lecturer}>
             <Header />
