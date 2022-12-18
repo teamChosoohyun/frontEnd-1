@@ -12,7 +12,7 @@ export default function colored_header()
                 <Link href="/intro/index"><span>코딩맘 소개</span></Link>
                 <Link href="/lecturer/index"><span>강사 소개</span></Link>
                 <Link href="/contents/all"><span>컨텐츠 소개</span></Link>
-                <Link href="/"><span>교구 소개</span></Link>
+                <Link href="/material"><span>교구 소개</span></Link>
             </div>
             <div className={styles.auth}>
                 <Link href="/"><span>로그인</span></Link>

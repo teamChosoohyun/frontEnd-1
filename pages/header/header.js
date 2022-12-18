@@ -13,7 +13,7 @@ export default function Header() {
                 <Link href="/intro"><span>코딩맘 소개</span></Link>
                 <Link href="/lecturer"><span>강사 소개</span></Link>
                 <Link href="/contents"><span>콘텐츠 소개</span></Link>
-                <Link href="/"><span>교구 소개</span></Link>
+                <Link href="/material"><span>교구 소개</span></Link>
             </div>
             <div className={classNames(styles.auth, styles.text)}>
                 <Link href="/"><span>로그인</span></Link>

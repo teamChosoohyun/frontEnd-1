@@ -28,7 +28,7 @@ export default function MainHeader()
         }
         lastPos = scrollY;
     }, [header])
-    
+
     return(
         <div className={styles.header} ref={headerRef}>
             <span className={styles.headerImg}>
@@ -38,7 +38,7 @@ export default function MainHeader()
                 <Link href="/intro"><span>코딩맘 소개</span></Link>
                 <Link href="/lecturer"><span>강사 소개</span></Link>
                 <Link href="/contents"><span>콘텐츠 소개</span></Link>
-                <Link href="/"><span>교구 소개</span></Link>
+                <Link href="/material"><span>교구 소개</span></Link>
             </div>
             <div className={styles.auth}>
                 <Link href="/login/loginPage"><span>로그인</span></Link>
