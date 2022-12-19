@@ -6,10 +6,12 @@ const { persistAtom } = recoilPersist();
 export const kakaoUserInfo = atom({
     key: 'kakaoUserInfo',
     default: {
+        id: 0,
         name: "",
         type: 0,
-        k_id: "",
+        kakakoid: "",
         k_img_url: "",
+        isLogin: false,
     },
     effects_UNSTABLE: [persistAtom],
 })

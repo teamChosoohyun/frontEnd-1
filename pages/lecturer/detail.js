@@ -9,6 +9,9 @@ import styles from "../../styles/lecturer/detail.module.css"
 import styled from "styled-components"; 
 import classNames from "classnames";
 import Modal from 'react-modal';
+import { useRecoilValue } from "recoil";
+import { kakaoUserInfo } from "../../util/user";
+import { instance } from "../../util/axiosSetting";
 
 export default function Detail() {
     const [value, setValue] = useState(new Date());
@@ -19,8 +22,8 @@ export default function Detail() {
         leaTime: ""
     })
     const [modal, setModal] = useState(false);
-
-    const auth = "강사";
+    const [modify, setModify] = useState(false);
+    const user = useRecoilValue(kakaoUserInfo);
 
     const getNowTime = () => {
         let now = new Date().getHours().toString().padStart(2, "0") + ":" + new Date().getMinutes().toString().padStart(2, "0");
@@ -34,8 +37,18 @@ export default function Detail() {
         return now;
     }
 
-    const workTimeFunc = (num) => {
-        const now = getNowTime();
+    const getDate = () => {
+        const now = new Date()
+
+        const newDate = (now.toLocaleString()).replaceAll(" ", "");
+        const day = newDate.substring(0, 10).replaceAll(".", "-");
+        const hour = now.getHours().toString().padStart(2, "0") + ":" + now.getMinutes().toString() + ":" + now.getSeconds().toString()
+
+        const re = day + " " + hour;
+        return re;
+    }
+
+    const workTimeFunc = (num, date) => {
         let newDate;
         if(num === 1){
             if(active.attendance){
@@ -49,7 +62,7 @@ export default function Detail() {
                 newDate = {
                     ...active,
                     attendance: true,
-                    attTime: now,
+                    attTime: date,
                 }
             }
         }
@@ -72,65 +85,117 @@ export default function Detail() {
         setActive(newDate);
     }
 
+    const goOrLeaveWork = (num) => {
+        const data = new FormData();
+        const now = getDate();
+        const getNow = getNowTime();
+        
+        if(num === 1) data.append("go_work", now);
+        else data.append("leave_work", now);
+
+        const url = num === 1 ? "/update/gowork" : "/update/leavework";
+
+        instance.put(url, data, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
+        .then((res)=>{
+            workTimeFunc(num, getNow);
+        })
+        .catch((error)=>{
+            console.log(error);
+        })
+    }
+
     return (
-        <div className={styles.detail}>
-            <Modal 
-                isOpen={modal}
-                onRequestClose={()=> setModal(false)}
-                style={customStyle}
-            >
-                <DetailModal/>
-            </Modal>
-            <Header/>                
-            <div className={styles.blue}>
-                <div className={styles.center}>
-                    <span className={classNames(styles.img)}>
-                        <Image src="/images/lecturer.png" alt="" width={700} height={500} className={styles.img} layout={"fixed"} />
-                    </span>
-                    {auth !== "일반" ?
-                        <div className={styles.flex}>
-                            <Work active={active.attendance} onClick={()=> workTimeFunc(1)}>
-                                <Text active={active.attendance}>출근</Text>
-                                <Text2>{active.attTime}</Text2>
-                            </Work>
-                            <Work active={active.leaveWork} onClick={()=> workTimeFunc(2)}>
-                                <Text active={active.leaveWork}>퇴근</Text>
-                                <Text2>{active.leaTime}</Text2>
-                            </Work>
-                        </div>
-                    :
-                        <></>}
-                </div>
-                <div className={styles.info}>
-                    <p className={styles.bold}>박춘배</p>
-                    <p>소프트웨어 분야</p>
-                    <ModifyDiv>
-                        <p>email@gmail.com</p>
-                        <button>정보수정</button>
-                    </ModifyDiv>
-                </div>
-                <CalendarContainer>
-                    <Calendar 
-                    onChange={(value)=>{
-                        setValue(value);
-                        if(auth !== "일반"){
-                            setModal(true);
-                        }
-                    }} 
-                    value={value}></Calendar>
-                </CalendarContainer>
-                <Footer/>
+      <div className={styles.detail}>
+        <Modal
+          isOpen={modal}
+          onRequestClose={() => setModal(false)}
+          style={customStyle}
+        >
+          <DetailModal />
+        </Modal>
+        <Header />
+        <div className={styles.blue}>
+          <div className={styles.center}>
+            <span className={classNames(styles.img)}>
+              <Image
+                src="/images/lecturer.png"
+                alt=""
+                width={700}
+                height={500}
+                className={styles.img}
+                layout={"fixed"}
+              />
+            </span>
+            {user.type === "1" && (
+              <div className={styles.flex}>
+                <Work
+                  active={active.attendance}
+                  onClick={() => goOrLeaveWork(1)}
+                >
+                  <Text active={active.attendance}>출근</Text>
+                  <Text2>{active.attTime}</Text2>
+                </Work>
+                <Work
+                  active={active.leaveWork}
+                  onClick={() => goOrLeaveWork(2)}
+                >
+                  <Text active={active.leaveWork}>퇴근</Text>
+                  <Text2>{active.leaTime}</Text2>
+                </Work>
+              </div>
+            )}
+          </div>
+          {modify ? (
+            <div className={styles.info}>
+              <input type="search" value="박춘배" name="name" />
+              <input type="search" value="소프트웨어 분야" name="category" />
+              <ModifyDiv>
+                <input type="search" value="email@gmail.com" name="email" />
+                <button onClick={() => setModify(false)}>수정완료</button>
+              </ModifyDiv>
             </div>
+          ) : (
+            <div className={styles.info}>
+              <p className={styles.bold}>박춘배</p>
+              <p>소프트웨어 분야</p>
+              <ModifyDiv>
+                <p>email@gmail.com</p>
+                <button onClick={() => setModify(true)}>정보수정</button>
+              </ModifyDiv>
+            </div>
+          )}
+          <CalendarContainer>
+            <Calendar
+              onChange={(value) => {
+                setValue(value);
+                if (user.type === "1") {
+                  setModal(true);
+                }
+              }}
+              value={value}
+            ></Calendar>
+          </CalendarContainer>
+          <Footer />
         </div>
-    )
+      </div>
+    );
 }
 
 const ModifyDiv = styled.div`
-    p{
+    p, input{
         font-size: 20px;
     }
+    input{
+        width: 300px;
+        height: 40px;
+        margin-top: 5px;
+        padding: 5px;
+    }
     display: flex;
-    width: 70%;
     position: relative;
     button{
         position: absolute;
