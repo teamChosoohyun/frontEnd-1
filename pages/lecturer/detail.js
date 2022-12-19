@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react"
 import Calendar from "react-calendar"
 import 'react-calendar/dist/Calendar.css';
-import Header from '../header/header'
-import Footer from '../footer/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import DetailModal from './detailModal'
 import styles from "../../styles/lecturer/detail.module.css"
 import styled from "styled-components"; 
@@ -85,7 +85,7 @@ export default function Detail() {
             <div className={styles.blue}>
                 <div className={styles.center}>
                     <span className={classNames(styles.img)}>
-                        <Image src="/images/lecturer.png" alt="" width={800} height={500} className={styles.img} layout={"fixed"} />
+                        <Image src="/images/lecturer.png" alt="" width={700} height={500} className={styles.img} layout={"fixed"} />
                     </span>
                     {auth !== "일반" ?
                         <div className={styles.flex}>
@@ -104,7 +104,10 @@ export default function Detail() {
                 <div className={styles.info}>
                     <p className={styles.bold}>박춘배</p>
                     <p>소프트웨어 분야</p>
-                    <p>email@gmail.com</p>
+                    <ModifyDiv>
+                        <p>email@gmail.com</p>
+                        <button>정보수정</button>
+                    </ModifyDiv>
                 </div>
                 <CalendarContainer>
                     <Calendar 
@@ -121,6 +124,19 @@ export default function Detail() {
         </div>
     )
 }
+
+const ModifyDiv = styled.div`
+    p{
+        font-size: 20px;
+    }
+    display: flex;
+    width: 70%;
+    position: relative;
+    button{
+        position: absolute;
+        right: 0;
+    }
+`
 
 const CalendarContainer = styled.div`
     display: flex;
@@ -150,7 +166,7 @@ const CalendarContainer = styled.div`
     }
     .react-calendar__tile{
         height: 60px;
-        width: 80px;
+        width: 70px;
         margin-top: 20px;
         abbr{
             font-size: 20px;
@@ -163,7 +179,7 @@ const CalendarContainer = styled.div`
     }
     .react-calendar__month-view__days{
       display: grid !important;
-      margin-left: 10px;
+      margin-left: 15px;
       grid-template-columns: repeat(7, 1fr);
     }
     .react-calendar__month-view__weekdays__weekday{

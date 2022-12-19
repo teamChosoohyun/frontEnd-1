@@ -1,6 +1,6 @@
 import styles from '../../styles/Intro/introduction.module.css';
-import Header from '../header/header'
-import Footer from '../footer/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import Fade from 'react-reveal/Fade'
 export default function Index(){
     return(

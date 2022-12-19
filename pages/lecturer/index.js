@@ -1,5 +1,5 @@
-import Header from '../header/header'
-import Footer from '../footer/footer'
+import Header from '../../components/header/header'
+import Footer from '../../components/footer/footer'
 import LecturerInfo from './lecturerInfo'
 import styles from "../../styles/lecturer/lecturerList.module.css";
 import styled from 'styled-components';
