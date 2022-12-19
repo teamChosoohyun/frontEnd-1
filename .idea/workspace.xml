@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb84e89-5868-40ba-827d-a8e1181748c9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/contents/contentIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/contents/contentIndex.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/axiosSetting.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/all.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/contents.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/lego.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/lego.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/others.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/others.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/contents/software.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/software.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/header/mainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/header/mainHeader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/contents/all.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/all.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/contents/contents.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/contents.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/contents/others.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contents/others.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contents/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contents/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/footer/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header/colored_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/colored_header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/header/mainHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/mainHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/intro/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/intro/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lecturer/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lecturer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lecturer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/login2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/loginpage.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/loginpage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +53,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SW2127/Desktop/all/make_me/teamChosoohyun/front",
+    "javascript.nodejs.core.library.configured.version": "16.14.2",
+    "javascript.nodejs.core.library.typings.version": "16.18.8",
+    "last_opened_file_path": "C:/Users/SW2127/Desktop/all/make_me/dblog/D-blog_Frontend",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -65,6 +72,8 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SW2127\Desktop\all\make_me\teamChosoohyun\front\pages\auth" />
+      <recent name="C:\Users\SW2127\Desktop\all\make_me\teamChosoohyun\front\components" />
       <recent name="C:\Users\SW2127\Desktop\all\make_me\teamChosoohyun\front\styles\header" />
     </key>
   </component>
@@ -99,7 +108,12 @@
       <workItem from="1667343875216" duration="734000" />
       <workItem from="1667370311121" duration="24000" />
       <workItem from="1668594074221" duration="24000" />
-      <workItem from="1669685500019" duration="5467000" />
+      <workItem from="1669685500019" duration="6168000" />
+      <workItem from="1669726506676" duration="52000" />
+      <workItem from="1670833908244" duration="2359000" />
+      <workItem from="1670844996621" duration="44000" />
+      <workItem from="1670894316005" duration="7281000" />
+      <workItem from="1670914751243" duration="4728000" />
     </task>
     <servers />
   </component>
@@ -108,6 +122,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="next.config.js" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

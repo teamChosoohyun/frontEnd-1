@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  eslint: {
-    ignoreDuringBuilds: true
-  },
+  async rewrites() {
+    return[
+      {
+        source: "/user",
+        destination: "http://localhost:2020/user"
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
