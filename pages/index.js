@@ -7,6 +7,7 @@ import Footer from "../components/footer/footer"
 import styles from '../styles/index.module.css';
 import Image from "next/image";
 import Fade from 'react-reveal/Fade'
+
 export default function Main() {
   return (
     <div className={styles.main}>
